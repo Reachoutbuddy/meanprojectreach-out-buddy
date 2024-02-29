@@ -1,0 +1,18 @@
+<div class="login-page">
+    <mat-card class="mat-elevation-z12">
+      <mat-card-title style="text-align:center;">Sign In</mat-card-title>
+      <mat-card-content>
+        <form (ngSubmit)="login()">
+          <mat-form-field>
+            <input matInput placeholder="Email" required name="email" [(ngModel)]="userData.email" type="email">
+          </mat-form-field>
+          <mat-form-field>
+            <input matInput placeholder="Password" required name="password" [(ngModel)]="userData.password" type="password">
+          </mat-form-field>
+          <mat-checkbox>Remember Me!</mat-checkbox>
+          <button mat-raised-button color="primary" type="submit" routerLink="home" >Sign In</button>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  
